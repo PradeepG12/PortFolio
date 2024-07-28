@@ -1,0 +1,40 @@
+.nav{
+  width: 90.5%;
+  position: fixed;
+  padding: .4rem 0.5rem;
+  background-color: rgb(158, 158, 158);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.logoContainer{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  column-gap: .3rem;
+}
+.logoContainer img{
+  border-radius: 25px;
+  width: 100%;
+}
+.logoContainer p{
+  align-self: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+.nav-list .borderActive{
+  border-bottom: 2px solid gray;
+}
+.nav button{
+  background-color: transparent;
+  /* border: none; */
+  border-radius: 2rem;
+}
