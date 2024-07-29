@@ -13,9 +13,9 @@ const Nav = () => {
       <nav className="nav-list">
         <li className='borderActive'><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Services</li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
       </nav>
       <div className="contact-btn">
         <button>Contact</button>

@@ -1,0 +1,29 @@
+.skills{
+  padding-top: 6rem;
+  height: 100vh;
+  border-top: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills .container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.skills .container .name{
+  font-size: 22px;
+  color: white;
+}
+.skills .container .html{
+  width: 35rem;
+  height: 1rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.skills .container .html .color{  
+  height: 100%;
+  background-color: rgb(255, 255, 83);
+  transition: all 2s;
+}
