@@ -3,7 +3,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
-import Projects from './components/Projects';
+import Projects from './components/projects/Projects';
 
 function App() {
   return (

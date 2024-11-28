@@ -1,0 +1,15 @@
+.projects{
+  padding-top: 5rem;
+  border-top: 2px solid white;
+  /* height: 100vh; */
+  text-align: center;
+}
+.proj-container{
+  margin: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+}
