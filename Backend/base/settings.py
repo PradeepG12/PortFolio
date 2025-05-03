@@ -15,7 +15,9 @@ import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-print(BASE_DIR)
+APP_DIR = BASE_DIR / 'apps'
+
+# Load environment variables from .env file
 env = environ.Env()
 environ.Env.read_env(BASE_DIR / '.env')
 
@@ -41,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]+ [
+    'apps.projects',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +132,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Custom user model
+MEDIA_URL = '/media/'
+MEDIA_ROOT = APP_DIR / 'media'
