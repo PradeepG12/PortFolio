@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../assets/logo.jpg'
 import '../css/nav.css'
-
+import NavData from '../assets/utils/NavData'
 
 const Nav = () => {
   return (
@@ -11,11 +11,14 @@ const Nav = () => {
         <p>Dev</p>
       </div>
       <nav className="nav-list">
-        <li className='borderActive'><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
+        {NavData.map((item, index) => {
+          return (
+            <li key={index} className={item.className}>
+              <a href={item.link} className="nav-link">{item.title}</a>
+            </li>
+            )
+          })
+        }
       </nav>
       <div className="contact-btn">
         <button>Contact</button>
