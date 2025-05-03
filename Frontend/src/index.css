@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-  /* scroll-behavior: smooth; */
-  background: linear-gradient(white,gray,black);
   list-style: none;
   width: 92%;
   margin: 0 auto;
@@ -15,7 +13,6 @@ body {
 }
 
 button,li{
-  /* border: none; */
   outline: none;
   cursor: pointer;
   padding: .40rem 1rem;
