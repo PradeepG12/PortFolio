@@ -10,7 +10,9 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
       {/* 1. Project Image */}
-      <img src={project.image} alt={project.title} className="project-image" />
+      <div className="project-image-container">
+        <img src={project.image} alt={project.title} className="project-image" />
+      </div>
 
       {/* 2. Title, Description, Tech Stack */}
       <div className="project-details">
@@ -24,6 +26,7 @@ const ProjectCard = ({ project }) => {
           )}
         </p>
         <div className="tech-stack">
+          <h5>Tech Stack : </h5>
           {project.tech?.map((Icon, index) => (
             <span key={index}>{<Icon />}</span>
           ))}

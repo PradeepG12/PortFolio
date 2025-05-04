@@ -11,7 +11,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+h5{
+  padding: 0;
+  margin: 0;
+}
 button,li{
   outline: none;
   cursor: pointer;
@@ -24,4 +27,7 @@ a{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+svg{
+  position: static !important;
 }

@@ -14,7 +14,7 @@ const Nav = () => {
         {NavData.map((item, index) => {
           return (
             <li key={index} className={item.className}>
-              <a href={item.link} className="nav-link">{item.title}</a>
+              <a href={item.link} className="nav-link"><h3>{item.title}</h3></a>
             </li>
             )
           })
