@@ -6,6 +6,7 @@ const NavData = [
         icon: 'home',
         iconType: 'material-icons',
         iconSize: '24px',
+        redirect: '/',
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ const NavData = [
         icon: 'info',
         iconType: 'material-icons',
         iconSize: '24px',
+        redirect: '/#about',
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const NavData = [
         icon: 'build',
         iconType: 'material-icons',
         iconSize: '24px',
+        redirect: '/#skills',
     },
     {
         id: 4,
@@ -30,6 +33,7 @@ const NavData = [
         icon: 'work',
         iconType: 'material-icons',
         iconSize: '24px',
+        redirect: '/#projects',
     },
     {
         id: 5,
@@ -38,6 +42,7 @@ const NavData = [
         icon: 'business_center',
         iconType: 'material-icons',
         iconSize: '24px',
+        redirect: '/#experience',
     },
 ]
 

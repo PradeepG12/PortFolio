@@ -1,0 +1,118 @@
+/* AboutMe.css */
+.home-btn-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.home-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.home-btn:hover {
+  background-color: #45a049;
+}
+.about-me {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-me p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .about-me p strong {
+    color: white;
+  }
+  
+  .about-me ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  .about-me li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-me h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 30px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .about-me ul li strong {
+    color: rgba(199, 192, 192, 0.904);
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .about-me {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .about-me h1 {
+      font-size: 2rem;
+    }
+  
+    .about-me p {
+      font-size: 1rem;
+    }
+  
+    .about-me h3 {
+      font-size: 1.5rem;
+    }
+  
+    .about-me ul li {
+      font-size: 1rem;
+    }
+  }
+  
+  .about-me .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .about-me .tech-stack li {
+    background-color: #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .about-me .tech-stack li strong {
+    color: white;
+  }
+  
