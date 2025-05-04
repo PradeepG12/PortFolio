@@ -1,94 +1,51 @@
-.skills{
-  height: 100vh;
-  width: inherit;
-  border-top: 2px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.skills h1{
-  margin-bottom: 4rem;
-}
-.skills .container {
-  width: 95%;
-  /* padding-left: 10rem; */
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.skills-section {
+  padding: 70px 20px;
+  text-align: center;
 }
 
-/* Progress Bar */
-.box{
-  width: 20rem;
-  margin-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  z-index: -9990;
-}
-.outer{
-  width: 133px;
-  height: 133px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: wheat;
-  box-shadow: 0 0 6px white,0 0 12px rgb(255, 255, 255),0 0 48px rgb(136, 166, 238);
-}
-.inner{
-  width: 104px;
-  height: 104px;
-  font-weight: 900;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow:inset 0 0 6px rgb(55, 54, 54),inset 0 0 12px rgb(108, 104, 104), inset 0px 0px 18px rgb(189, 164, 164);
-
-}
-svg{
-  position: absolute;
-  top: -4px;
-  /* bottom: 5px; */
-  left: 5.6rem;
-}
-#c2{
-  fill: none;
-  stroke-width: .81rem;
-  stroke-dasharray: 410;
-  stroke-dashoffset: 410;
-  animation: anime 2s linear forwards;
-}
-@keyframes anime{
-  100%{
-      stroke-dashoffset: 185;
-  };
+.skills-title h2 {
+  font-size: 40px;
+  color: rgba(241, 241, 241, 0.651);
+  margin-bottom: 10px;
 }
 
-/* 
-.skills .container{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-.skills .container .name{
-  font-size: 22px;
+.skills-title p {
+  font-size: 18px;
   color: white;
+  margin-bottom: 50px;
 }
-.skills .container .html{
-  width: 35rem;
-  height: 31rem;
-  border: 1px solid white;
-  border-radius: 50%;
-  overflow: hidden;
+.skill-name {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
 }
-.skills .container .html .color{  
-  height: 100%;
-  background-color: rgb(255, 255, 83);
-  transition: all 2s;
-} */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-circle {
+  width: 130px;
+  height: 130px;
+}
+
+.skill-name {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+}
