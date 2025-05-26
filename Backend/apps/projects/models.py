@@ -1,6 +1,8 @@
 from django.db import models
 
 from .config import media_storage_path, ProjectStatus
+from apps.access.models import User
+from apps.access.config import COMMAN_NULL_DEFAULT_CONFIG
 
 class BaseModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
@@ -12,6 +14,8 @@ class BaseModel(models.Model):
 
 
 class Project(BaseModel):
+
+    user = models.ForeignKey(User, on_delete=models.DO_NOTHING, **COMMAN_NULL_DEFAULT_CONFIG)
     title = models.CharField(max_length=100)
     description = models.TextField()
     tech_stack = models.JSONField()

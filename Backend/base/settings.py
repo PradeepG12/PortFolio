@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]+ [
+    'apps.access',
     'apps.projects',
 ]
 
@@ -76,6 +77,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'base.wsgi.application'
 
+AUTH_USER_MODEL = 'access.User'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
