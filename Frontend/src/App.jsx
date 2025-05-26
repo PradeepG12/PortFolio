@@ -1,18 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
+
 import './App.css';
-import Nav from './components/Nav';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/projects/Projects';
+import AnimatedBackground from './components/Background';
+import MainPage from './Pages/MainPage';
+import AboutMe from './Pages/AboutMe';
 
 function App() {
   return (
     <div className="App">
-      <Nav/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Projects/>
+      <AnimatedBackground />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<AboutMe />} />
+      </Routes>
     </div>
   );
 }

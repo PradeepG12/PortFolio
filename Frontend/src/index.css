@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-  /* scroll-behavior: smooth; */
-  background: linear-gradient(white,gray,black);
   list-style: none;
   width: 92%;
   margin: 0 auto;
@@ -13,9 +11,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+h5{
+  padding: 0;
+  margin: 0;
+}
 button,li{
-  /* border: none; */
   outline: none;
   cursor: pointer;
   padding: .40rem 1rem;
@@ -27,4 +27,7 @@ a{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+svg{
+  position: static !important;
 }
